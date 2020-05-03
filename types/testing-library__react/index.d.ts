@@ -7,6 +7,7 @@
 //                 Ifiok Jr. <https://github.com/ifiokjr>
 //                 Daniel Afonso <https://github.com/danieljcafonso>
 //                 Tim Swalling <https://github.com/timswalling>
+//                 Deshi Rahim <https://github.com/deshiknaves>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.1
 
@@ -23,7 +24,7 @@ export type RenderResult<Q extends Queries = typeof queries> = {
       baseElement?: HTMLElement | DocumentFragment | Array<HTMLElement | DocumentFragment>,
       maxLength?: number,
       options?: PrettyFormatOptions
-    ) => void;
+    ) => string|string[];
     rerender: (ui: React.ReactElement) => void;
     unmount: () => boolean;
     asFragment: () => DocumentFragment;
